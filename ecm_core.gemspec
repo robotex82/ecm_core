@@ -20,7 +20,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'request_store_rails'
   s.add_dependency 'route_translator'
   s.add_dependency "itsf_backend"
-  s.add_dependency "ecm_user_area2"
   s.add_dependency "kaminari"
   s.add_dependency "bootstrap-kaminari-views"
 

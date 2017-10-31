@@ -4,7 +4,6 @@ require "delayed_job_active_record"
 require "request_store_rails"
 require "route_translator"
 require "itsf_backend"
-require "ecm_user_area2"
 
 require "ecm/core/configuration"
 require "ecm/core/engine"
