@@ -1,0 +1,2 @@
+
+  mount Ecm::Core::Engine, at: '/'
