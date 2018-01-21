@@ -22,6 +22,16 @@ module Ecm
             []
           end
         end
+
+        mattr_accessor(:enable_active_storage_backend) { false }
+
+        def self.registered_controllers
+          if enable_active_storage_backend
+            @@registered_controllers
+          else
+            -> { @@registered_controllers.call.reject { |c| c.name =~ /.*ActiveStorage.*/ } }
+          end
+        end
       end
     end
   end

@@ -2,3 +2,44 @@ de:
   classes:
     ecm/core/backend/engine: Core
   or: oder
+  activerecord:
+    models:
+      delayed/job:
+        one: Hintergrundjob
+        other: Hintergrundjobs
+      active_storage/attachment:
+        one: Anhang
+        other: Anhänge
+      active_storage/blob:
+        one: Datei
+        other: Dateien
+    attributes:
+      delayed/job:
+        priority: Priorität
+        attempts: Versuche
+        handler: handler
+        last_error: Letzter Fehler
+        run_at: Gestartet am
+        locked_at: Gesperrt am
+        failed_at: Gescheitert am
+        locked_by: Gesperrt durch
+        Queue: Warteschlange
+        created_at: Erstellt am
+        updated_at: Aktualisiert am
+      active_storage/attachment:
+        additional_actions: Weitere Aktionen
+        name: Name
+        record: Angehängt an
+        record_id: Angehängt an
+        blob: Datei
+        blob_id: Datei
+        created_at: Erstellt am
+      active_storage/blob:
+        additional_actions: Weitere Aktionen
+        key: Schlüssel
+        filename: Dateiname
+        content_type: Dateityp
+        metadata: Metadaten
+        byte_size: Dateigröße
+        checksum: Checksumme
+        created_at: Erstellt am
