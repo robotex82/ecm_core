@@ -26,4 +26,10 @@ Ecm::Core::Backend.configure do |config|
   # default: config.enable_active_storage_backend = false
   # 
   config.enable_active_storage_backend = false
+
+  # Enable support for DelayedJob.
+  #
+  # default: config.enable_delayed_job_backend = false
+  #
+  config.enable_delayed_job_backend = false
 end
